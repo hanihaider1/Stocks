@@ -1,18 +1,18 @@
-Stock Analysis and Visualization
+**Stock Analysis and Visualization**
 
-Description:
+**Description:**
 The Stock Analysis and Visualization package would be the first step for the investor who is conducting an initial search of a large range of publicly traded companies that fit his or her investment goal.
 
-Purpose:
+**Purpose:**
 The purpose of this package is to provide the user with basic equity performance statistics and a graphical representation of a user selected publicly traded company’s share price over time. Over the past 10 years python has made its mark in the financial markets and has streamlined how data is shaping the investment decisions of many savvy investors. There are many modules and packages that are like what we have developed for this project. We believe in this crowded space there is a need for a simple package that supplies the facts and provides insight for the financial decision maker which is what we believe our package delivers.
 
-Data: User downloads the selected company historical share price data from Yahoo finance
+**Data:** User downloads the selected company historical share price data from Yahoo finance
 
-Language Used: Python
+**Language Used:** Python
 
-Libraries Used: Numpy, Pandas and  Matplotlib
+**Libraries Used:** Numpy, Pandas and  Matplotlib
 
-The organization of the package code in the repository:
+T**he organization of the package code in the repository:**
 
 1.	SQ.csv: Data for Square collected from Yahoo Finance for for dates 05-04-16 to 01-04-21
 2.	PYPL.csv: Data for PayPal collected from Yahoo Finance for for dates 05-04-16 to 01-04-21. Will be used for comparing stocks.
@@ -28,10 +28,11 @@ The organization of the package code in the repository:
 
 5.	__init__.py: Initialization script marking the repository as a Python package. 
 
-Examples of usage 
+**Examples of usage **
+
 This package can be used by the novice or more advanced financial investor. The Stock Analysis and Visualization package would be the first step for the investor who is conducting an initial search of a large range of publicly traded companies that fit his or her investment goal. Once the code runs the user is presented with a graph that provides a graphical representation of the company’s performance with the accompanying 50 and 200-day moving averages.
 Also provided is a summary table that is an overview of the investment performance during the time period. The combination of these two outputs will provide the investor a tangle idea of the highest high, lowest low, and overall equity performance of the company. To provide the user with as much information as possible we have provided a comparison table that contains the target companies stock performance data as well as its closest competitors. With these outputs we believe that the investor would be informed enough to make an investment decision to buy or sell the company’s stock.
 
-Report of the project
+**Report of the project**
 See the full report and code of this project here for further reference
 
