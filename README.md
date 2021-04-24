@@ -19,9 +19,13 @@ T**he organization of the package code in the repository:**
 3.	Modules: Modules ending in “.py” containing Python code defining classes and functions. 
 
       Outline of our code:
+      
        Summary Table: The summary table will include a brief outline of the company's stock performance: when the                  company's stock price hit its highest high and its lowest low for the period, and the largest percentage change up and down during the time frame with the associated dates.
+       
        Graphs: The graph will be a line graph to help visualize the company’s stock performance for the chosen period.
+       
        Moving average: The moving average is a layered feature on the graph which will be limited to the 50- and 200-day moving average for the company’s stock. For many investors these moving average provide technical indicators of the stock rising or falling.  
+       
        Comparing stocks summary with accompanying graph: If the user decides to input two different publicly traded company stocks the table and graph will reflect the above information for both companies which will give the user a side-by-side comparison of the two companies.
 
 4.	Test: Test scripts ending in “.py” containing unit tests covering most of the package’s functionality. (add the kind of test cases)
