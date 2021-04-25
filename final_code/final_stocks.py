@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 
 
@@ -69,6 +68,11 @@ class Stocks:
             raise ValueError("header is wrong ")
 
     def name(self):
+        '''
+        parameter:
+        self -- the current object 
+        return two list with data for the data frame 
+        '''
         max_value = self.stock_file.loc[self.stock_file['Close'].idxmax()]
         min_value = self.stock_file.loc[self.stock_file['Close'].idxmin()]
         self.stock_file["Largest percent"] = (
@@ -93,9 +97,7 @@ class Stocks:
         it was  highest stock, lowest stock, largest moving up in a single day
         % and largest moving downward in a single day by %
         '''
-        '''
-        rasie error if the date given is worng or out of range 
-        '''
+        
         self.rasing_error(self.stocks_filename)
 
         value1, value2 = self.name()
@@ -112,6 +114,12 @@ class Stocks:
         return df.style.set_properties(**{'text-align': 'center'}).hide_index()
 
     def read_file(self):
+        '''
+        parameter:read bothe csv files for graphs 
+        self -- the current object 
+        his will raise any error, this method will
+        return None
+        '''
         self.csv_file = pd.read_csv(self.stocks_filename)
         if self.stocks_filename2 != None:
             self.rasing_error(self.stocks_filename2)
@@ -148,18 +156,37 @@ class Stocks:
         plt.show()
 
     def graph(self):
+        '''
+        parameter:call the fuction and make the graph plot 
+        self -- the current object 
+        retrun None 
+        '''
+        
         self.transform()
         self.show_plot()
 
     def transform_data(self):
+        '''
+        method -- transform_data:picks up the closing price and merges it 
+        return the merged data 
+        '''
+        
         output1 = pd.merge(
             self.df_compare, self.df2_compare, on='Date', how='inner')
-        output1.columns = ['Date', 'SQ_prize', 'PYPL_prize']
+        output1.columns = ['Date', self.stocks_filename, self.stocks_filename2]
 
         output1.Date = pd.to_datetime(output1.Date)
         return output1
 
-    def stock_comparison(self):
+    def stock_comparison_graph(self):
+        '''
+        Method -- comparing_stocks_graphs 
+
+        Self -- the current object 
+
+        Returns a line graph of the stock prices
+        '''
+        
         output1 = self.transform_data()
         output1.plot(x="Date")
         plt.title("Closing Prices", fontsize=16)
@@ -168,6 +195,14 @@ class Stocks:
         plt.show()
 
     def stock(self):
+        '''
+        Method : stock
+        Self—current object:
+
+        Returns two list which ahas information for data frame 
+
+
+        '''
 
         max_value = self.stock_file.loc[self.stock_file['Close'].idxmax()]
         min_value = self.stock_file.loc[self.stock_file['Close'].idxmin()]
@@ -191,6 +226,15 @@ class Stocks:
         return list1, list2
 
     def comparing_summary(self):
+        '''
+        Method : summary: get the complete summary after comapring 2 stocks
+
+        Self—current object:
+
+        Returns the complete summary of 2 stocks which has the highest stock, lowest stock and percentage change
+
+        Raise error if one of the data sets is not entered
+        '''
 
         self.rasing_error(self.stocks_filename)
 
