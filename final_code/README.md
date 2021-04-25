@@ -40,7 +40,7 @@ Also provided is a summary table that is an overview of the investment performan
 **Running the code**
 
 Please refer to Result.ipynb to see the outputs. If you want to use results.py file, please mark df.style in Summary and Comparing_summary methods as comments and return df. 
-df.style is only supported in Jupyter Notebook as of now.
+Panas support df.style only in Jupyter Notebook as of now.
 
 
 **Report of the project**
