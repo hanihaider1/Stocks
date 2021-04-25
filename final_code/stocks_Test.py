@@ -32,8 +32,8 @@ class StocksTest(unittest.TestCase):
         self.assertEqual(value1[1], 34.200001)
         self.assertEqual(value1[2], 110.150002)
         self.assertEqual(value2[0], 276.570007)
-        self.assertEqual(value2[1], 38.09)
-        self.assertEqual(value2[2], 57.040001000000004)
+        self.assertEqual(value2[1], 8.62)
+        self.assertEqual(value2[2], 72.650002)
         
         
     def test_init3(self):
