@@ -37,6 +37,12 @@ T**he organization of the package code in the repository:**
 This package can be used by the novice or more advanced financial investor. Once the code runs the user is presented with a graph that provides a graphical representation of the company’s performance with the accompanying 50 and 200-day moving averages.
 Also provided is a summary table that is an overview of the investment performance during the time period. The combination of these two outputs will provide the investor a tangle idea of the highest high, lowest low, and overall equity performance of the company. To provide the user with as much information as possible we have provided a comparison table that contains the target companies stock performance data as well as its closest competitors. With these outputs we believe that the investor would be informed enough to make an investment decision to buy or sell the company’s stock.
 
+**Running the code**
+
+Please refer to Result.ipynb to see the outputs. If you want to use results.py file, please mark df.style in Summary and Comparing_summary methods as comments and return df. 
+df.style is only supported in Jupyter Notebook as of now.
+
+
 **Report of the project**
 
 See the full report and code of this project here for further reference
