@@ -28,7 +28,7 @@ T**he organization of the package code in the repository:**
        
        Comparing stocks summary with accompanying graph: If the user decides to input two different publicly traded company stocks the table and graph will reflect the above information for both companies which will give the user a side-by-side comparison of the two companies.
 
-4.	Test: Test scripts ending in “.py” containing unit tests covering most of the package’s functionality. (add the kind of test cases)
+4.	Test: Test scripts ending in “.py” containing unit tests covering most of the package’s functionality.
 
 5.	__init__.py: Initialization script marking the repository as a Python package. 
 
