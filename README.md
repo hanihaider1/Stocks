@@ -10,7 +10,7 @@ The purpose of this package is to provide the user with basic equity performance
 
 **Language Used:** Python
 
-**Libraries Used:** Numpy, Pandas and  Matplotlib
+**Libraries Used:** Pandas and  Matplotlib
 
 T**he organization of the package code in the repository:**
 
