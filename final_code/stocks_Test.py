@@ -26,7 +26,7 @@ class StocksTest(unittest.TestCase):
         self -- the current object
         return none 
         '''
-        validation = Stocks("PYPL.csv","SQ (1).csv")
+        validation = Stocks("PYPL.csv","SQ.csv")
         value1,value2 = validation.stock()
         self.assertEqual(value1[0], 304.790009)
         self.assertEqual(value1[1], 34.200001)
